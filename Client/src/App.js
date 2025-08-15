@@ -12,9 +12,9 @@ import "./App.css";
 
 const Layout = ({ children }) => (
   <>
-    <Navbar title="PawFinds" />
+    <Navbar title="PetHive" />
     {children}
-    <Footer title="PawFinds" />
+    <Footer title="PetHive" />
   </>
 );
 
@@ -22,50 +22,47 @@ const App = () => {
   return (
     <Router>
       <Routes>
-        <Route 
-          path="/" 
+        <Route
+          path="/"
           element={
             <Layout>
               <Home description="Ensure you are fully prepared to provide proper care and attention to your pet before welcoming them into your home." />
             </Layout>
-          } 
+          }
         />
-        <Route 
-          path="/services" 
+        <Route
+          path="/services"
           element={
             <Layout>
               <Services />
             </Layout>
-          } 
+          }
         />
-        <Route 
-          path="/contact" 
+        <Route
+          path="/contact"
           element={
             <Layout>
               <Contact />
             </Layout>
-          } 
+          }
         />
-        <Route 
-          path="/pets" 
+        <Route
+          path="/pets"
           element={
             <Layout>
               <Pets />
             </Layout>
-          } 
+          }
         />
-        <Route 
-          path="/adopt-form" 
+        <Route
+          path="/adopt-form"
           element={
             <Layout>
               <AdoptForm />
             </Layout>
-          } 
+          }
         />
-        <Route 
-          path="/admin" 
-          element={<AdminLogin />} 
-        />
+        <Route path="/admin" element={<AdminLogin />} />
       </Routes>
     </Router>
   );

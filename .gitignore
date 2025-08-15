@@ -1,0 +1,52 @@
+# =========================
+# Common files for both
+# =========================
+node_modules/
+.env
+.env.*.local
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+package-lock.json
+yarn.lock
+pnpm-lock.yaml
+.DS_Store
+
+# =========================
+# Build outputs
+# =========================
+dist/
+build/
+.tmp/
+.cache/
+
+# =========================
+# Client-specific (React)
+# =========================
+client/node_modules/
+client/build/
+client/.env
+client/.env.*.local
+client/.cache/
+client/public/static/
+
+# =========================
+# Server-specific (Node.js / Express)
+# =========================
+server/node_modules/
+server/dist/
+server/.env
+server/.env.*.local
+server/logs/
+server/tmp/
+server/uploads/
+
+# =========================
+# IDE and OS files
+# =========================
+.vscode/
+.idea/
+*.swp
+Thumbs.db
